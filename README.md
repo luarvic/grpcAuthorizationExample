@@ -51,7 +51,7 @@ Next, we need to build the project to have new classes specified in proto automa
 dotnet build
 ```
 
-Now we need to implement `Authorize` method declared in [authz.proto](./src/AuthorizationService.Grpc/Protos/authz.proto#L10). Let's create [AuthzService.cs](./src/AuthorizationService.Grpc/Services/AuthzService.cs) file and write [Authorize](./src/AuthorizationService.Grpc/Services/AuthzService.cs#L14) method there. For the sake of simplicity, let's authorize users if the passed authorization token contains `valid` substring.
+Now we need to implement `Authorize` method declared in [authz.proto](./src/AuthorizationService.Grpc/Protos/authz.proto#L10). Let's create [AuthzService.cs](./src/AuthorizationService.Grpc/Services/AuthzService.cs) file and write [Authorize](./src/AuthorizationService.Grpc/Services/AuthzService.cs#L14) method there. For the sake of simplicity, let's authorize users if the passed authorization token contains [valid](./src/AuthorizationService.Grpc/Services/AuthzService.cs#L25) substring.
 
 Finally we need to map `AuthzService` in [Program.cs](./src/AuthorizationService.Grpc/Program.cs#L12) file.
 
