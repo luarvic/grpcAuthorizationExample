@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+option csharp_namespace = "AuthorizationService.Grpc";
+
+package authz;
+
+// The authorization service definition.
+service Authorization {
+  // Authorizes a client
+  rpc Authorize (AuthorizationRequest) returns (AuthorizationReply);
+}
+
+// The request message containing the authorization token.
+message AuthorizationRequest {
+  string token = 1;
+}
+
+// The response message containing the authorization result.
+message AuthorizationReply {
+  bool isAuthorized = 1;
+}
