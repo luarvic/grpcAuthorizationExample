@@ -33,7 +33,7 @@ app.Use(async (context, next) => {
             Token = context.Request.Headers.Authorization.ToString()
         }
     );
-    // Pass request forward of return 401 (Unauthorized) depending on authorization result.
+    // Pass request forward or return 401 (Unauthorized) depending on authorization result.
     if (reply.IsAuthorized)
     {
         await next(context);
