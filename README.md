@@ -23,7 +23,7 @@ This service exposes a single `WeatherForecast` endpoint accessible to any user.
 
 ![Weather Forecast Endpoints](./images/weather-forecast-endpoints.png)
 
-The goal is to make the endpoint accessible only to users who have a valid token. Additionally, we want to dedicate the authorization logic to the gRPS-based service.
+The goal is to make the endpoint accessible only to users who have a valid token. Additionally, we want to dedicate the authorization logic to the gRPC-based service.
 
 ### Create empty HTTP-based weather forecast service
 
